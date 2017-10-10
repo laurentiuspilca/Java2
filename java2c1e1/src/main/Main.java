@@ -5,6 +5,7 @@
  */
 package main;
 
+import gui.MainFrame;
 import service.PersoanaService;
 
 /**
@@ -17,9 +18,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        PersoanaService service = new PersoanaService();
-//        service.adaugaPersoana("Gigel");
-        service.getPersoane().forEach(System.out::println);
+        MainFrame f = new MainFrame();
+        f.setVisible(true);
     }
     
 }
